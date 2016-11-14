@@ -79,6 +79,6 @@ public class Bouquet implements Item{
 
     }*/
     public String toString() {
-        return "Price is " + String.valueOf(cost());
+        return String.valueOf(getDescription());
     }
 }

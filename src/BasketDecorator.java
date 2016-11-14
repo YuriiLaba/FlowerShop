@@ -2,9 +2,10 @@
  * Created by jlaba on 14.11.2016.
  */
 public class BasketDecorator extends ItemDecorator {
-    Item item;
-    public BasketDecorator(Item item) {
-        this.item = item;
+
+    public BasketDecorator(Item item)
+    {
+        super(item);
     }
     public String getDescription() {
         return item.getDescription() + ", Basket";

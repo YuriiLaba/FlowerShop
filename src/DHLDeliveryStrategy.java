@@ -5,7 +5,7 @@ import java.util.LinkedList;
  */
 public class DHLDeliveryStrategy extends IDelivery {
     public String deliver(LinkedList items){
-        return "You choose DHL delivery, your parcel " + items + "will be delivered till 5 days";
+        return "You choose DHL delivery, your parcel " + items + " will be delivered till 5 days";
 
     }
 

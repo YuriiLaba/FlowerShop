@@ -2,10 +2,10 @@
  * Created by jlaba on 14.11.2016.
  */
 public class RibbonDecorator extends ItemDecorator {
-    Item item;
 
-    public RibbonDecorator(Item item) {
-        this.item = item;
+    public RibbonDecorator(Item item)
+    {
+        super(item);
     }
 
     public String getDescription() {
