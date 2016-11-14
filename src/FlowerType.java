@@ -2,12 +2,12 @@
  * Created by jlaba on 23.10.2016.
  */
 public enum FlowerType {
-    ROSE, TULIP;
+    BLUE, WHITE;
     public String toString(){
         String a = "";
         switch(this){
-            case ROSE: a = "Rose"; break;
-            case TULIP: a = "Tulip"; break;
+            case BLUE: a = "Blue"; break;
+            case WHITE: a = "White"; break;
             default: a = "Without any type"; break;
         }return a;
     }

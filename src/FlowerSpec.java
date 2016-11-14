@@ -1,20 +1,11 @@
 /**
- * Created by jlaba on 23.10.2016.
+ * Created by jlaba on 25.10.2016.
  */
-public class FlowerSpec {
-    protected double length = 0;
-    protected boolean fresh = false;
-    protected double price = 0;
+public class FlowerSpec extends Spec {
+    protected double fresh = 0;
 
-
-
-    public FlowerSpec(double length, boolean fresh, double price){
-        this.price = price;
-
-        this.length = length;
-
+    public FlowerSpec(double length, double fresh) {
+        super(length);
         this.fresh = fresh;
     }
-
-
 }
