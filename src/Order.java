@@ -4,7 +4,7 @@ import java.util.LinkedList;
  * Created by jlaba on 08.11.2016.
  */
 public class Order {
-    public LinkedList<Bouquet> items;
+    public LinkedList<Item> items;
     protected IPayment payment;
     protected IDelivery delivery;
 
@@ -34,6 +34,8 @@ public class Order {
     public double calculateTotalPrice() {
         double totalPrace = 0.0;
         for (Item item: items) {
+            System.out.println("FFFFFFF");
+            System.out.println(item.cost());
 
             totalPrace += item.cost();
         }
@@ -41,7 +43,7 @@ public class Order {
     }
 
     public void addItem(Item item) {
-        items.add((Bouquet) item);
+        items.add(item);
     }
 
     public void removeItem(Item item) {

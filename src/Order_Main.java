@@ -12,12 +12,17 @@ public class Order_Main {
 
         newBucket.add(flower1);
         //newBucket.add(flower2);
-        myOrder.addItem(newBucket);
+
         Item item = newBucket;
+        //myOrder.addItem(item);
         item = new PaperDecorator(item);
+        //myOrder.addItem(item);
         item = new RibbonDecorator(item);
+        //myOrder.addItem(item);
         item = new BasketDecorator(item);
+        //myOrder.addItem(item);
         System.out.println(item.cost());
+        myOrder.addItem(item);
         myOrder.proccessOrder();
         System.out.println("Total price: ");
         System.out.println(myOrder.calculateTotalPrice());
