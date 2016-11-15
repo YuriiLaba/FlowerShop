@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String [] args){
-        LinkedList<Bouquet> items = new LinkedList();
+        LinkedList<Bouquet> items = new LinkedList<Bouquet>();
 
 
         //Spec cactusSpec = new CactusSpec(12,34,4);
@@ -90,7 +90,6 @@ public class Main {
             }
         }
 
-
         System.out.println("Do you want to add Paper: Yes or Not");
         Scanner paper_input = new Scanner(System.in);
         String paper_text = paper_input.nextLine();
@@ -116,7 +115,7 @@ public class Main {
         String delivery_text = delivery_input.nextLine();
 
         items.add(newBucket);
-        System.out.println(items);
+        System.out.println(item.getDescription());
 
         if(delivery_text.equals("DHL")){
             DHLDeliveryStrategy DHL = new DHLDeliveryStrategy();
@@ -126,6 +125,17 @@ public class Main {
             PostDeliveryStrategy Post = new PostDeliveryStrategy();
             System.out.println(Post.deliver(items));
     }
+        System.out.println("Please, choose way of pay: PayPal or CreditCard");
+        Scanner pay_input = new Scanner(System.in);
+        String pay_text = pay_input.nextLine();
+        if(pay_text.equals("PayPal")){
+            PayPalPaymentStrategy PayPal = new PayPalPaymentStrategy();
+            System.out.println(PayPal.pay(item.cost()));
+        }
+        else if(pay_text.equals("Post")){
+            CreditCardPaymentStrategy CreditCard = new CreditCardPaymentStrategy();
+            System.out.println(CreditCard.pay(item.cost()));
+        }
 
  }
 }

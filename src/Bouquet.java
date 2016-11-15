@@ -18,14 +18,14 @@ public class Bouquet implements Item{
         return p;
     }
     public String getDescription(){
-        String sum = "";
+        String final_description = "";
         for (Flower flower: p){
             if(flower != null){
-                sum += flower.getDescription();
+                final_description += flower.getDescription();
             }else{
                 break;
             }
-        }return sum;
+        }return final_description;
     }
 
     @Override
