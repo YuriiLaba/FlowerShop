@@ -8,26 +8,16 @@ public abstract class Flower {
 
     public Flower( Spec spec){
         this.spec = spec;
-    } 
+    }
 
     //public double getPrice() {
         //return spec.price;
     //}
 
-    public double getLength()
-    {
-        return spec.length;
-    }
 
-    public double cost(){
-        return 0;
-    }
-    public String getDescription(){
-        return "";
-    }
-    public String getName(){
-        return "";
-    }
+    public abstract double cost();
+    public abstract String getDescription();
+    public abstract String getName();
 
 
 
