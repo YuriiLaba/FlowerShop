@@ -12,4 +12,7 @@ public class PaperDecorator extends ItemDecorator {
     public double cost() {
         return 13 + item.cost();
     }
+
+
+
 }

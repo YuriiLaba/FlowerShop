@@ -10,12 +10,18 @@ public class Main {
         LinkedList<Bouquet> items = new LinkedList<Bouquet>();
 
 
-        //Spec cactusSpec = new CactusSpec(12,34,4);
-        //Cactus flower1 = new Cactus((CactusSpec)cactusSpec, FlowerShape.STEM);
-        //FlowerSpec romashkaSpec1 = new FlowerSpec(12, 13);
-        //Romashka flower2 = new Romashka(romashkaSpec1, FlowerType.BLUE);
+        Spec cactusSpec1 = new CactusSpec(12,34);
+        Cactus flower1 = new Cactus((CactusSpec)cactusSpec1, FlowerShape.STEM);
+        Spec cactusSpec2 = new CactusSpec(12,34);
+        Cactus flower3 = new Cactus((CactusSpec)cactusSpec2, FlowerShape.STEM);
+        FlowerSpec romashkaSpec1 = new FlowerSpec(12, 13);
+        Romashka flower2 = new Romashka(romashkaSpec1, FlowerType.BLUE);
 
-        //Bouquet newBucket1 = new Bouquet();
+        Bouquet newBucket1 = new Bouquet();
+        newBucket1.add(flower1);
+        newBucket1.add(flower2);
+        newBucket1.add(flower3);
+        System.out.println(newBucket1.searchFlower("Cactus"));
         //Item item1 = newBucket1;
         //System.out.println();
 

@@ -9,8 +9,11 @@ public class Order_Main {
         Bouquet newBucket = new Bouquet();
         Spec cactusSpec = new CactusSpec(12,34);
         Cactus flower1 = new Cactus((CactusSpec)cactusSpec, FlowerShape.STEM);
+        Spec cactusSpec1 = new CactusSpec(12,34);
+        Cactus flower2 = new Cactus((CactusSpec)cactusSpec1, FlowerShape.STEM);
 
         newBucket.add(flower1);
+        newBucket.add(flower2);
         //newBucket.add(flower2);
 
         Item item = newBucket;
@@ -24,6 +27,7 @@ public class Order_Main {
         System.out.println(item.cost());
         myOrder.addItem(item);
         myOrder.proccessOrder();
+
         System.out.println("Total price: ");
         System.out.println(myOrder.calculateTotalPrice());
     }

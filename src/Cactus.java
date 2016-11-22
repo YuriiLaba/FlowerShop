@@ -18,6 +18,10 @@ public class Cactus extends Flower {
         return 129;
     }
 
+    public String getName(){
+        return "Cactus";
+    }
+
     public String getDescription(){
         return "Cactus" + " (" + getShape() + ") ";
     }

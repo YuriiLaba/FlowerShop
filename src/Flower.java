@@ -1,7 +1,7 @@
 /**
  * Created by jlaba on 10.10.2016.
  */
-public class Flower {
+public abstract class Flower {
     protected Spec spec;
     protected FlowerShape shape;
     //protected FlowerColour colour;
@@ -25,6 +25,10 @@ public class Flower {
     public String getDescription(){
         return "";
     }
+    public String getName(){
+        return "";
+    }
+
 
 
 

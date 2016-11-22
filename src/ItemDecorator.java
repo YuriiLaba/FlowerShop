@@ -7,4 +7,7 @@ public abstract class ItemDecorator implements Item{
         this.item = item;
     }
     public abstract String getDescription();
+    public int searchFlower(String name){
+        return item.searchFlower(name);
+    }
 }

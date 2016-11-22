@@ -11,6 +11,10 @@ public class Romashka extends Flower {
     public double cost(){
         return 99;
     }
+
+    public String getName(){
+        return "Romashka";
+    }
     public String getDescription(){
         return "Romashka";
     }

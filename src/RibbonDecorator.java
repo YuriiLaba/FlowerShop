@@ -14,4 +14,6 @@ public class RibbonDecorator extends ItemDecorator {
     public double cost() {
         return 4 + this.item.cost();
    }
+
+
 }

@@ -1,9 +1,11 @@
 import java.util.LinkedList;
+import java.util.Observable;
+import java.util.Observer;
 
 /**
  * Created by jlaba on 08.11.2016.
  */
-public class Order {
+public class Order extends Observable {
     public LinkedList<Item> items;
     protected IPayment payment;
     protected IDelivery delivery;
@@ -14,6 +16,10 @@ public class Order {
     public void proccessOrder(){
         getDeliveryStrategy().deliver(items);
         getPaymentStrategy().pay(calculateTotalPrice());
+
+        new CactusSapplierObserver().update(this, items);
+        new RomashkaSapplierObserver().update(this, items);
+
     }
     public void setPaymentStrategy(IPayment payment) {
         this.payment = payment;
@@ -34,7 +40,7 @@ public class Order {
     public double calculateTotalPrice() {
         double totalPrace = 0.0;
         for (Item item: items) {
-            System.out.println("FFFFFFF");
+
             System.out.println(item.cost());
 
             totalPrace += item.cost();

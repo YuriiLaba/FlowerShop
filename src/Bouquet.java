@@ -57,27 +57,24 @@ public class Bouquet implements Item{
         //return s;
     //}
 
-/*
-    public Flower[] searchFlower(Flower flower){
-        int count1 = 0;
+
+    public int searchFlower(String name){
+        int count = 0;
+
 
         for (int i = 0; i < p.length; i++) {
-            if (p[i].getColor() == flower.getColor() || (p[i].getLength() == flower.getLength() ||
-                    (p[i].getPrice() == flower.getPrice()) || (p[i].getFresh() == flower.getFresh()))){
-                count1 +=1;
+
+            if(p[i] == null){
+                continue;
             }
-        }Flower[] lst = new Flower[count1];
-        for (int a = 0; a < lst.length; a++){
-            for (int i = 0; i < p.length; i++) {
-                if (p[i].getColor() == flower.getColor() || (p[i].getLength() == flower.getLength()))
-                    lst[a] = p[i];
+            else if (name.equals(p[i].getName())) {
+                count++;
+
             }
+        }
 
-
-        }return lst;
-
-
-    }*/
+        return count;
+    }
     public String toString() {
         return String.valueOf(getDescription());
     }

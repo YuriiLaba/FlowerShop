@@ -5,4 +5,6 @@ public interface Item {
     String description = "Unknown flower";
     public String getDescription();
     public abstract double cost();
+    int searchFlower(String name);
+
 }
