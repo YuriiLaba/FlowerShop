@@ -8,7 +8,7 @@ public abstract class Flower {
 
     public Flower( Spec spec){
         this.spec = spec;
-    }
+    } 
 
     //public double getPrice() {
         //return spec.price;
