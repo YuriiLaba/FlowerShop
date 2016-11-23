@@ -7,13 +7,14 @@ public class Order_Main {
         myOrder.setDeliveryStrategy(new PostDeliveryStrategy());
         myOrder.setPaymentStrategy(new PayPalPaymentStrategy());
         Bouquet newBucket = new Bouquet();
+        Bouquet newBucket1 = new Bouquet();
         Spec cactusSpec = new CactusSpec(12,34);
         Cactus flower1 = new Cactus((CactusSpec)cactusSpec, FlowerShape.STEM);
         Spec cactusSpec1 = new CactusSpec(12,34);
         Cactus flower2 = new Cactus((CactusSpec)cactusSpec1, FlowerShape.STEM);
 
         newBucket.add(flower1);
-        newBucket.add(flower2);
+        newBucket1.add(flower2);
         //newBucket.add(flower2);
 
         Item item = newBucket;
@@ -26,6 +27,7 @@ public class Order_Main {
         //myOrder.addItem(item);
         System.out.println(item.cost());
         myOrder.addItem(item);
+        myOrder.addItem(newBucket1);
         myOrder.proccessOrder();
 
         System.out.println("Total price: ");

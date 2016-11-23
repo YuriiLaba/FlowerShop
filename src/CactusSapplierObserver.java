@@ -8,11 +8,14 @@ import java.util.Observer;
 public class CactusSapplierObserver implements Observer {
     @Override
     public void update(Observable o, Object arg) {
+        int count = 0;
         LinkedList<Item> bouquet = (LinkedList)arg;
         for(int i = 0; i < ((LinkedList) arg).size(); i++){
+            System.out.println(i);
             int x = bouquet.get(i).searchFlower("Cactus");
-            System.out.println("You will be delivered " + x + " cactuses");
-        }
+            count += x;
+
+        }System.out.println("You will be delivered " + count + " cactuses");
     }
 }
 
