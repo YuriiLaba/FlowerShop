@@ -1,6 +1,12 @@
+import Decorator.Item;
+import Delivery.IDelivery;
+import Observer.CactusSapplierObserver;
+import Observer.RomashkaSapplierObserver;
+import Payment.IPayment;
+
 import java.util.LinkedList;
 import java.util.Observable;
-import java.util.Observer;
+
 
 /**
  * Created by jlaba on 08.11.2016.
@@ -41,7 +47,7 @@ public class Order extends Observable {
         double totalPrace = 0.0;
         for (Item item: items) {
 
-            System.out.println(item.cost());
+            //System.out.println(item.cost());
 
             totalPrace += item.cost();
         }

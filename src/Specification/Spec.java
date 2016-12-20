@@ -1,3 +1,5 @@
+package Specification;
+
 /**
  * Created by jlaba on 25.10.2016.
  */
@@ -10,4 +12,5 @@ public class Spec {
         this.length = length;
 
     }
+
 }

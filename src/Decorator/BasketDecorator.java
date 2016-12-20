@@ -1,3 +1,5 @@
+package Decorator;
+
 /**
  * Created by jlaba on 14.11.2016.
  */
@@ -7,13 +9,12 @@ public class BasketDecorator extends ItemDecorator {
     {
         super(item);
     }
-    public String getDescription() {
+    public String getDescription()
+    {
         return item.getDescription() + ", Basket";
     }
-    public double cost() {
+    public double cost()
+    {
         return 10 + item.cost();
     }
-
-
-
 }

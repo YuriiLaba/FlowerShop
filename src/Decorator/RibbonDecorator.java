@@ -1,3 +1,8 @@
+package Decorator;
+
+import Decorator.Item;
+import Decorator.ItemDecorator;
+
 /**
  * Created by jlaba on 14.11.2016.
  */

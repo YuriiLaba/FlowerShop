@@ -1,3 +1,5 @@
+import Specification.Spec;
+
 /**
  * Created by jlaba on 10.10.2016.
  */

@@ -1,3 +1,13 @@
+import Decorator.BasketDecorator;
+import Decorator.Item;
+import Decorator.PaperDecorator;
+import Decorator.RibbonDecorator;
+import Delivery.PostDeliveryStrategy;
+import Payment.PayPalPaymentStrategy;
+import Specification.CactusSpec;
+import Specification.Spec;
+
+
 /**
  * Created by jlaba on 15.11.2016.
  */
@@ -6,8 +16,8 @@ public class Order_Main {
         Order myOrder = new Order();
         myOrder.setDeliveryStrategy(new PostDeliveryStrategy());
         myOrder.setPaymentStrategy(new PayPalPaymentStrategy());
-        Bouquet newBucket = new Bouquet();
-        Bouquet newBucket1 = new Bouquet();
+        Bouquet newBucket = new RomashkaWeddingBouquet();
+        Bouquet newBucket1 = new RomashkaWeddingBouquet();
         Spec cactusSpec = new CactusSpec(12,34);
         Cactus flower1 = new Cactus((CactusSpec)cactusSpec, FlowerShape.STEM);
         Spec cactusSpec1 = new CactusSpec(12,34);
@@ -25,7 +35,7 @@ public class Order_Main {
         //myOrder.addItem(item);
         item = new BasketDecorator(item);
         //myOrder.addItem(item);
-        System.out.println(item.cost());
+        //System.out.println(item.cost());
         myOrder.addItem(item);
         myOrder.addItem(newBucket1);
         myOrder.proccessOrder();
