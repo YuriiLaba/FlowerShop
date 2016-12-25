@@ -16,7 +16,6 @@ public class RomashkaSapplierObserver implements Observer {
         int count = 0;
         List<Item> bouquet = (List)arg;
         for(int i = 0; i < ((List) arg).size(); i++){
-            System.out.println(i);
             int x = bouquet.get(i).searchFlower("Romashka");
             count+=x;
 

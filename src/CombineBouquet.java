@@ -1,16 +1,13 @@
 /**
- * Created by jlaba on 19.12.2016.
+ * Created by jlaba on 25.12.2016.
  */
-public class RomashkaWeddingBouquet extends Bouquet {
+public class CombineBouquet extends Bouquet {
     private int max = 5;
-    private Flower[] p = new Romashka[max];
+    private Flower[] p = new Flower[max];
     private int i = 0;
 
 
     public Flower[] add(Flower f) {
-        if (!(f instanceof Romashka)){
-            throw new IllegalArgumentException("You can add only Romaska to this bucket");
-        }
         p[i] = f;
         i++;
         return p;
