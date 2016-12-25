@@ -2,6 +2,9 @@
  * Created by jlaba on 25.12.2016.
  */
 public class CactusHomeBouquet extends Bouquet {
+    /**
+     * Here is factory of only cactuses bouquets
+     */
     private int max = 5;
     private Flower[] p = new Cactus[max];
     private int i = 0;

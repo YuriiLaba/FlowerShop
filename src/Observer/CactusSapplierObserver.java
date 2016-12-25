@@ -10,6 +10,10 @@ import java.util.Observer;
  * Created by jlaba on 21.11.2016.
  */
 public class CactusSapplierObserver implements Observer {
+    /**
+     * This is Observer pattern which notify, how many cactuses you will be delivered
+     * It implements built-in class
+     */
     @Override
     public void update(Observable o, Object arg) {
         int count = 0;

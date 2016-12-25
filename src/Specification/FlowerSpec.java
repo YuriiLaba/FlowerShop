@@ -6,6 +6,9 @@ import Specification.Spec;
  * Created by jlaba on 25.10.2016.
  */
 public class FlowerSpec extends Spec {
+    /**
+     * Special properties of Flower
+     */
     protected double fresh = 0;
 
     public FlowerSpec(double length, double fresh) {

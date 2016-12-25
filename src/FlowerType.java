@@ -2,6 +2,9 @@
  * Created by jlaba on 23.10.2016.
  */
 public enum FlowerType {
+    /**
+     * Basic type of flower
+     */
     BLUE, WHITE;
     public String toString(){
         String a = "";

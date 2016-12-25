@@ -14,6 +14,9 @@ import java.util.Observable;
  * Created by jlaba on 08.11.2016.
  */
 public class Order extends Observable {
+    /**
+     * Kind of a store
+     */
     public LinkedList<Item> items;
     protected IPayment payment;
     protected IDelivery delivery;

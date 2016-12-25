@@ -2,6 +2,9 @@
  * Created by jlaba on 23.10.2016.
  */
 public enum FlowerColour {
+    /**
+     * Choose colour for flower
+     */
     BLACK, RED, PINK, BLUE;
     public String toString(){
         String a = "";

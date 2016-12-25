@@ -4,6 +4,9 @@ import Specification.Spec;
  * Created by jlaba on 25.10.2016.
  */
 public class Romashka extends Flower {
+    /**
+     * Basic Romashka class
+     */
     protected FlowerType type;
 
     public Romashka(Spec spec, FlowerType type) {

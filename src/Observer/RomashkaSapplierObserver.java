@@ -11,6 +11,10 @@ import java.util.Observer;
  * Created by jlaba on 22.11.2016.
  */
 public class RomashkaSapplierObserver implements Observer {
+    /**
+     * This is Observer pattern which notify, how many romashkas you will be delivered
+     * It implements built-in class
+     */
     @Override
     public void update(Observable o, Object arg) {
         int count = 0;

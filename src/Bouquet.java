@@ -4,6 +4,9 @@ import Decorator.Item;
  * Created by jlaba on 10.10.2016.
  */
 public abstract class Bouquet implements Item {
+    /**
+     * Common class for all factories of bouquets
+     */
 
     public abstract Flower[] add(Flower f);
 

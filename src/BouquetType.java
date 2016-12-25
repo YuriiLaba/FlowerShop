@@ -2,6 +2,9 @@
  * Created by jlaba on 24.12.2016.
  */
 public enum BouquetType {
+    /**
+     * Here is factory of bouquets
+     */
     ROMASHKA_WEDDING_BOUQUET, CACTUS_HOME_BOUQUET, COMBINE_BOUQUET;
     public Bouquet toBouquet(){
         //Bouquet bouquet ;

@@ -2,6 +2,9 @@
  * Created by jlaba on 25.12.2016.
  */
 public class CombineBouquet extends Bouquet {
+    /**
+     * Here is factory of only combine bouquet
+     */
     private int max = 5;
     private Flower[] p = new Flower[max];
     private int i = 0;

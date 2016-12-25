@@ -2,6 +2,9 @@
  * Created by jlaba on 19.12.2016.
  */
 public class RomashkaWeddingBouquet extends Bouquet {
+    /**
+     * Here is factory of only romashkas bouquets
+     */
     private int max = 5;
     private Flower[] p = new Romashka[max];
     private int i = 0;

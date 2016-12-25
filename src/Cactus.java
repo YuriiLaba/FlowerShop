@@ -4,6 +4,9 @@ import Specification.CactusSpec;
  * Created by jlaba on 25.10.2016.
  */
 public class Cactus extends Flower {
+    /**
+     * Basic cactus class
+     */
     protected FlowerShape shape;
 
     public FlowerShape getShape() {

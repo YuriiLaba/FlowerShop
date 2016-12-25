@@ -15,6 +15,9 @@ import Specification.Spec;
  */
 public class Order_Main {
     public static void main(String [] args){
+        /**
+         * Run
+         */
         Order myOrder = new Order();
         myOrder.setDeliveryStrategy(new PostDeliveryStrategy());
         myOrder.setPaymentStrategy(new PayPalPaymentStrategy());

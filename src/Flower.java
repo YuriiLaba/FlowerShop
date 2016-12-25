@@ -4,6 +4,9 @@ import Specification.Spec;
  * Created by jlaba on 10.10.2016.
  */
 public abstract class Flower {
+    /**
+     * Basic flower class
+     */
     protected Spec spec;
     protected FlowerShape shape;
     //protected FlowerColour colour;
